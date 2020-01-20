@@ -1,4 +1,3 @@
-# em
 
 Easy Markup är ett enkelt uppmärkningsspråk för text.
 
