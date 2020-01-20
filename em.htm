@@ -1,0 +1,105 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><html><head><meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1"><title>Easy Markup</title></head><body><p>Easy Markup är ett enkelt uppmärkningsspråk för text. Det är inte tänkt för att skapa HTML-sidor, utan för att märka upp och formatera text, som till exempel anteckningar.</p><p>Högst upp i filen kan man ha en alternativ HTML-titel. Det ser ut så här:</p><pre>Det här är en alternativ HTML-titel.
+
+.p
+Det här är ett stycke med text.
+
+.p
+Det här är ett stycke med text.</pre><p>Det går också att börja filen utan en HTML-rubrik, genom att lämna en tom rad, före fötsta textstycket.</p><pre>
+.p
+Det här är ett stycke med text.
+
+.p
+Det här är ett stycke med text.</pre><p>Det går också att markera ett eller flera ord, som kursiva, eller med fetstil:</p><pre>Det här är en alternativ HTML-titel.
+
+.p
+Det här är ett stycke med text. Det #här ordet är kursivt.
+
+.p
+Det här är ett stycke med text. Det @här ordet är markerat med fetstil.
+
+.p
+Det här är ett stycke med text. De #{här två} ordet är kursiva.
+
+.p
+Det här är ett stycke med text. De @{här två} ordet är markerade med fetstil.
+
+.p
+Det här är ett  stycke med text.
+Textstycket    slutar
+här.</pre><p>Ett stycke kan innehålla radbrytningar, och följder av mellanslag och radbrytningar, ersätts med ett mellanslag.</p><p>Blockelement börjar med en tom rad, följt av en punkt och en eller flera bokstäver eller siffror, och därefter en radbytning. Blockelementet avslutas när nästa blockelement börjar.</p><p>Det finns sex nivåer av rubriker:</p><pre>Titel
+
+.h1
+Det här är en rubrik, nivå ett
+
+.p
+Det här är ett textstycke.
+
+.h2
+Det här är en rubrik, nivå två
+
+.p
+Det här är ett textstycke.
+
+.h2
+Det här är en rubrik, nivå två
+
+.p
+Det här är ett textstycke.</pre><p>Det finns tre sorter av listor. Onumrerad lista:</p><pre>
+.l
+Det här är listpost ett.
+
+Det här #är listpost två.
+
+Det här är listpost
+tre.</pre><p>Listposter skiljs åt av en tom rad. Nästa lista är en numrerad lista:</p><pre>
+.ln
+Det här är listpost ett.
+
+Det här #är listpost två.
+
+Det här är listpost
+tre.</pre><p>Listposter kan skrivas över flera rader.</p><p>Det går här inte att lista poster i flera nivåer. Det får man i så fall koda direkt med HTML-kod. Vi kommer till det senare. Nästa lista är en definitionslista:</p><pre>
+.ld
+Ord ett
+Det här är en definition.
+
+Ord två
+Det här är en definition.
+
+Ord tre
+Det här är en
+definition.</pre><p>Det finns ett alternativt sätt att skriva definitionslistor:</p><pre>
+.ld
+Ord ett;Det här är en definition.
+
+Ord två;Det här är en definition.
+
+Ord tre;Det här är en
+definition.</pre><p>Tabeller skrivs med ett semikolon mellan kolumnerna:</p><pre>
+.t
+kolumn ett;kolumn två;kolumn tre
+kolumn ett;kolumn två;kolumn tre</pre><p>En tabellrad kan inte gå över flera rader, utan ett radbyte gör att man kommer till nästa rad i tabellen.</p><p>Det finns också ett tabellalternativ med rubrikrad:</p><pre>
+.th
+kolumn ett;kolumn två;kolumn tre
+kolumn ett;kolumn två;kolumn tre</pre><p>Det går att skriva förformaterad text, som behåller radbrytningar och positioner i texten, så här:</p><pre>
+.v
+   Det går att skriva text här!
+
+                        Det går att skriva text här!
+
+ | Ett  | Två  |
+ |x x   |x   x |</pre><p>Bilder skrivs så här ...</p><pre>
+.i
+bild.jpg</pre><p>... eller med alternativ text, så här:</p><pre>
+.i
+bild.jpg
+Det här är alternativ text!</pre><p>Det går också att skriva HTML-kod direkt i filen, så här!</p><pre>
+.x
+&lt;p&gt;Det här är ett textstycke.&lt;/p&gt;
+&lt;p&gt;Det här är ett textstycke.&lt;/p&gt;</pre><p>Tecken med speciell funktion, kan skrivas med föregående backslash:</p><pre>
+.p
+Det här stycket innehåller tecknet \\, och tecknet \@.</pre><p>Även om em2htm-programmet inte stödjer Unicode, så kan man skriva tecken med fyrsiffriga hexadecimala koder:</p><pre>
+.p
+Så här skrivs tecken med koder:|017c
+
+</pre></body></html>

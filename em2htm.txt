@@ -1,0 +1,5 @@
+
+Usage: em2htm < infile.txt > outfile.htm
+       em2htm file.css < infile.txt > outfile.htm
+       em2htm file.css print.css < infile.txt > outfile.htm
+
